@@ -1,10 +1,13 @@
+import { CategoriesProvider } from "./context/CategoriesProvider";
 import MainLayout from "./layout";
 import AppRoutes from "./routes";
 
 function App() {
   return (
     <MainLayout>
-      <AppRoutes/>
+      <CategoriesProvider>
+        <AppRoutes />
+      </CategoriesProvider>
     </MainLayout>
   );
 }
